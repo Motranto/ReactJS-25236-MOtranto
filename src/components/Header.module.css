@@ -1,0 +1,28 @@
+
+.encabezado{
+    border: 10px double #000030;
+    border-radius: 35%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.encabezadoH1, .encabezadoH3 {
+    text-align: center;
+    color:rgb(21, 0, 139);
+}
+
+.encabezadoH3 {
+    font-style: italic;
+}
+
+.comision{
+    font-size: clamp(8px, 1vw, 32px);
+    text-align: end;
+    color:black;
+    margin-right: 12vw;
+}
+
+.name {
+    color:rgb(21, 0, 139);
+
+}

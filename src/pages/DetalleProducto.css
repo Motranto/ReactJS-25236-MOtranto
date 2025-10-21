@@ -1,0 +1,111 @@
+/* -------------------------------------------------------------------------- */
+/* 1. Contenedor Principal y Estructura General */
+/* -------------------------------------------------------------------------- */
+.detalle-producto-container {
+    padding: 40px 20px;
+    max-width: 900px; 
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    gap: 30px;
+}
+
+/* Manejo del estado de carga */
+.cargando-mensaje {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Contenedores Flexibles para organizar la información */
+.detalle-imagen-columna {
+    flex-basis: 40%; /* 40% del ancho para la imagen */
+    text-align: center;
+}
+
+.detalle-info-columna {
+    flex-basis: 60%; /* 60% del ancho para los detalles */
+}
+
+/* -------------------------------------------------------------------------- */
+/* 2. Imagen del Producto */
+/* -------------------------------------------------------------------------- */
+.det-producto-imagen-grande {
+    width: 100%; /* Ocupa todo su contenedor */
+    max-width: 400px;
+    height: auto;
+    max-height: 450px;
+    object-fit: contain; /* Asegura que la imagen completa se vea sin recortar */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 3. Título, Precio y Rating */
+/* -------------------------------------------------------------------------- */
+.det-producto-id {
+    font-size: 1em;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.det-producto-titulo {
+    font-size: 2em;
+    font-weight: 700;
+    color: #1d3557; /* Color principal oscuro */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.det-producto-rating {
+    margin-bottom: 15px;
+    display: flex; 
+    align-items: center;
+}
+
+.det-producto-descripcion {
+    font-size: 1.1em;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.det-producto-precio {
+    font-size: 2.5em;
+    font-weight: 800;
+    color: #e63946; 
+    margin-top: 15px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 4. Responsive Design (Ajuste para móviles) */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .detalle-producto-container {
+        flex-direction: column; /* Apila las columnas verticalmente */
+        max-width: 100%;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .detalle-imagen-columna,
+    .detalle-info-columna {
+        flex-basis: 100%;
+    }
+    
+    .producto-titulo {
+        font-size: 1.5em;
+    }
+    
+    .producto-precio {
+        font-size: 2em;
+    }
+}

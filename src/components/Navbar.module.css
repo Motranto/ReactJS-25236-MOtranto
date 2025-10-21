@@ -1,0 +1,36 @@
+.lista {
+  display: flex; 
+  justify-content: center; 
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  gap: 15px; /* Espacio entre los enlaces */
+  background-color: #92b6cc;
+  border-radius: 15px;
+}
+
+.item {
+  margin: 5px; 
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none; /* Quitar el subrayado */
+  color: #555;
+  margin: 0 10px;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 15px 12px; /* Aumentar el área de clic */
+  /* Transición para efectos de hover */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto Hover */
+.link:hover {
+  background-color: #457b9d; /* Un azul primario más claro al pasar el mouse */
+  color: #ffffff;
+  border-bottom: 1px solid #0d0d0d; 
+}

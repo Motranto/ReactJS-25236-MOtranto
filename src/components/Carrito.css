@@ -1,0 +1,113 @@
+/* -------------------------------------------------------------------------- */
+/* 1. Contenedor Principal del Carrito */
+/* -------------------------------------------------------------------------- */
+.carrito-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Fondo blanco, más limpio para el carrito */
+    max-width: 700px; /* Ancho máximo para centrar y estructurar bien el contenido */
+    margin: 30px auto; /* Centrar el carrito en la página */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* -------------------------------------------------------------------------- */
+/* 2. Encabezado y Botón "Vaciar Carrito" */
+/* -------------------------------------------------------------------------- */
+.carrito-header {
+    display: flex;
+    justify-content: space-between; /* Alinea el título y el botón en extremos */
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #0056b3; /* Línea de acento con color primario */
+    margin-bottom: 20px;
+}
+
+.carrito-header h2 {
+    color: #333;
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.boton-vaciar {
+    padding: 8px 15px;
+    background-color: #d9534f; /* Rojo para acción destructiva/peligrosa */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+    text-transform: uppercase;
+}
+
+.boton-vaciar:hover {
+    background-color: #c9302c;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 3. Ítem Individual del Carrito */
+/* -------------------------------------------------------------------------- */
+.item-carrito {
+    display: flex; /* Usar flexbox para alinear imagen, texto y botón */
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px dashed #eee; /* Separador sutil entre ítems */
+}
+
+/* Efecto hover suave en el ítem (opcional) */
+.item-carrito:hover {
+    background-color: #fcfcfc;
+}
+
+/* Estilo para la imagen */
+.item-carrito img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+    border: 1px solid #ddd;
+}
+
+/* Estilo para el texto (Título y Precio) */
+.item-carrito p {
+    flex-grow: 1; /* Permite que el texto ocupe el espacio disponible */
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Estilo del precio dentro del párrafo */
+.item-carrito p span {
+    font-weight: 700;
+    color: #0056b3; /* Color primario para destacar el precio */
+    margin-left: 5px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* 4. Botón "Eliminar" */
+/* -------------------------------------------------------------------------- */
+.boton-eliminar {
+    padding: 6px 12px;
+    background-color: #f0ad4e; /* Amarillo/Naranja para advertencia/eliminar */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: background-color 0.2s;
+}
+
+.boton-eliminar:hover {
+    background-color: #ec971f;
+}
+
+
+/* Estilo para el último ítem (sin separador inferior) */
+.carrito-container .item-carrito:last-child {
+    border-bottom: none;
+}

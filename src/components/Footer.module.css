@@ -1,0 +1,11 @@
+.footerTextoG {
+    text-align: center;
+    font-size: clamp(14px, 2vw, 50px);
+    color:darkblue;
+}
+
+.footerTexto{
+    font-size: clamp(10px, 1.3vw, 32px);
+    text-align: center;
+    color:blue;
+}
