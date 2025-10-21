@@ -37,7 +37,7 @@ const Contacto = () => {
         // Aplicamos la clase principal
         <div className="formulario-contacto-container"> 
             <h2>Formulario de Contacto</h2>
-            <p>Dejanos tus datos y comentarios que te responderemos a la brevedad!</p>
+            <p>Dejanos tus datos y comentarios que te responderemos a la brevedad.</p>
             <form onSubmit={handleSubmit}>
             
             {/* Campo Nombre */}
